@@ -1,0 +1,48 @@
+\documentclass{proc}
+\usepackage{url}
+
+\begin{document}
+
+\title{Fine-grained Emotion Prediction With Emoji and Emoticon}
+
+\author{Haozheng Ni(hn2318), Chuqi Yang(cy2478), Somya Singhal(ss5348)}
+
+\maketitle
+
+\section{Abstract / Introduction}
+
+
+Twitter is a rich source of data for sentiment analysis, opinion mining and many other tasks. One notable feature of twitter data is the usage of emotion token such as emoji and emoticon. Intuitively such token express one's feeling regardless of the language is used, and therefore they could be very helpful in many tasks listed above. Our project aims to embed emoji and emoticon into vectors and then combine with word embedding to test whether this will help in fine-grained emotion prediction.
+
+
+\section{Hypothesis}
+Our hypothesis is emoji and emoticon could significantly improve the model performance for fine-grained sentiment analysis. 
+
+
+\section{Data}
+Since there is no available published twitter data that contain enough emojis and emotions, we will create our own twitter data by Twitter Stream API. Our plan is to get twitter data dating from 2016 and filter them. Hash-tag will be used as label.
+
+\section{Approach}
+After we obtain the data, our plan consists of two parts
+\begin{enumerate}
+\item Train a 300-dimensional emoticon embedding based on description or twitter data
+\item Apply different models to predict fine-grained emotions, which may include
+\begin{enumerate}
+  \item SVM
+  \item Logistic regression
+  \item KNN
+  \item Online perceptron
+  \item Decision tree
+  \item RNN/LSTM 
+  \end{enumerate}
+  We will compare the results of different models can try to explain why some models are better/worse.
+\end{enumerate}
+
+
+\section{Literature Review}
+
+Sentiment analysis on twitter data has been a popular topic in recent years, and most state-of-art models uses deep learning on word embedding. One example is using gated-RNN to predict fine-grained emotions \cite{abdul2017emonet}. Meanwhile, there is a trend of mining emoji in text. Some researchers designed an emoji embedding based on twitter data \cite{barbieri2016does} or text description of emojis \cite{eisner2016emoji2vec}, and they showed that combining emoji embedding could potentially improve the model performance. Some other researchers used emoji as an representative of sentiment and predicted emoji that user will use in the text. One interesting finding is the model pre-trained on such task displays better power in other domains and tasks like sarcasm detection and sentiment analysis \cite{felbo2017using}. 
+
+\bibliographystyle{abbrv}
+\bibliography{prospectus}
+\end{document}

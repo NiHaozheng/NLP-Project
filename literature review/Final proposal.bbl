@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{abdul2017emonet}
+M.~Abdul-Mageed and L.~Ungar.
+\newblock Emonet: Fine-grained emotion detection with gated recurrent neural
+  networks.
+\newblock In {\em Proceedings of the 55th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, volume~1, pages 718--728,
+  2017.
+
+\bibitem{barbieri2016does}
+F.~Barbieri, F.~Ronzano, and H.~Saggion.
+\newblock What does this emoji mean? a vector space skip-gram model for twitter
+  emojis.
+\newblock In {\em LREC}, 2016.
+
+\bibitem{eisner2016emoji2vec}
+B.~Eisner, T.~Rockt{\"a}schel, I.~Augenstein, M.~Bo{\v{s}}njak, and S.~Riedel.
+\newblock emoji2vec: Learning emoji representations from their description.
+\newblock {\em arXiv preprint arXiv:1609.08359}, 2016.
+
+\bibitem{felbo2017using}
+B.~Felbo, A.~Mislove, A.~S{\o}gaard, I.~Rahwan, and S.~Lehmann.
+\newblock Using millions of emoji occurrences to learn any-domain
+  representations for detecting sentiment, emotion and sarcasm.
+\newblock {\em arXiv preprint arXiv:1708.00524}, 2017.
+
+\end{thebibliography}
